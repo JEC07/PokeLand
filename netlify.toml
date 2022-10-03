@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/*"
+  to = "/index.bundle.html"
+  status = 200
