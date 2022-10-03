@@ -1,0 +1,38 @@
+.search-not-found {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 10vh;
+    
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+    overflow: hidden;
+}
+
+.search-not-found__text {
+    width: fit-content;
+    height: fit-content;
+    padding: min(0.5em, 10%);
+    margin: auto;
+
+    position: absolute;
+    inset: auto 0 0 0;
+
+    text-align: center;
+    font-size: 1.5em;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.search-not-found__span {
+    margin-left: 10px;
+
+    color: var(--orange-color-1);
+    font-size: inherit;  
+}
+
+.search-not-found__img {
+    width: min(90%, 500px);
+    height: fit-content;
+    margin: auto;
+}
