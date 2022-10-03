@@ -1,0 +1,51 @@
+.links-container {
+  width: 4em;
+  height: fit-content;
+
+  position: fixed;
+  right: 5%;
+  bottom: 15vh;
+  row-gap: 0.25em;
+
+  display: flex;
+  flex-wrap: wrap;  
+}
+
+.pointer-link {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid var(--white-color-3);
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 100%;
+  background-color: var(--white-color-2);
+  font-weight: bold;
+  font-size: 2em;
+  text-decoration: none;
+  color: var(--black-color-1);
+
+  animation-name: changeOpacity;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+.pointer-link:hover {
+  box-shadow: 0 0 5px var(--white-color-3);
+}
+
+.pointer-link[hidden] {
+  display: none;
+}
+
+@keyframes changeOpacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

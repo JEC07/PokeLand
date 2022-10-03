@@ -1,0 +1,39 @@
+.search-form {
+  grid-area: search;
+
+  width: min(17em, 70%);
+  height: 2em;
+  margin: auto 0 auto auto;
+ 
+  display: flex;
+  border-radius: 30px;
+  background-color: var(--teal-color-2);
+}
+
+.search-form__input {
+  width: 80%;
+  height: 100%;
+  padding: 0 5%;
+
+  outline: none;
+  background-color: transparent;
+}
+
+.search-form__btn {
+  width: 20%;
+  height: fit-content;
+  margin: auto;
+
+  background-color: transparent;
+  display: flex;
+}
+
+.search-form__btn:hover {
+  cursor: pointer;
+}
+
+.search-form__btn-icon {
+  width: 1.5em;
+  height: 1.5em;
+  margin: auto;
+}

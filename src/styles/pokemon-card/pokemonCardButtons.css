@@ -1,0 +1,25 @@
+.pokemon-card__buy-btn, 
+.pokemon-card__details-btn,
+.pokemon-card__cancel-btn {
+  width: 45%;
+  height: 20%;
+  margin-top: auto;
+
+  border-radius: 5px;
+  background-color: var(--orange-color-2);
+  color: var(--black-color-2);
+  font-weight: bold;
+}
+
+.pokemon-card__buy-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pokemon-card__cancel-btn {
+  background-color: var(--white-color-2);
+}
+
+.pokemon-card__details-btn {
+  margin-left: auto;
+}

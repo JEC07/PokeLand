@@ -1,0 +1,28 @@
+.pokemon-abilities {
+  width: 100%;
+  height: fit-content;
+}
+
+.pokemon-ability {
+  width: fit-content;
+  height: fit-content;
+}
+
+.pokemon-ability__details {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 1em;
+}
+
+.pokemon-ability__details-name {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 0.5em;
+
+  text-transform: capitalize;
+}
+
+.pokemon-ability__details-text {
+  width: 100%;
+  height: fit-content;
+}

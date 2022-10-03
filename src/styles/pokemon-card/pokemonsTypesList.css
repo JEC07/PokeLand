@@ -1,0 +1,24 @@
+.pokemon-types {
+  width: 100%;
+  height: fit-content;
+  margin-top: 1em;
+
+  display: flex;
+}
+
+.pokemon-type-name {
+  width: 45%;
+  height: fit-content;
+  padding: 0.8em;
+  margin: auto;
+
+  display: inline-block;
+  background-color: var(--teal-color-1);
+  border-radius: 25px;
+
+  color: var(--white-color-1);
+  text-align: center;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+

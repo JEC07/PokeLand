@@ -1,0 +1,74 @@
+.pokemon-modal-card-container {
+  width: 100%;
+  height: 100vh;
+
+  position: fixed;
+  inset: 0;
+  z-index: var(--modalContainer-z-index);
+
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow: auto;
+}
+
+.pokemon-modal-card-container[hidden] {
+  display: none;
+}
+
+.modal {
+  width: 100%;
+  height: fit-content;
+  margin: auto;
+  padding: 0 var(--main-padding);
+
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--white-color-1);
+  position: relative;
+}
+
+.modal__card {
+  width: min(16em, 100%);
+  height: fit-content;
+  margin: 10% auto;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.modal__card-img {
+  width: 10em;
+  height: 10em;
+  margin: auto;
+}
+
+.modal__card-title {
+  width: 100%;
+  height: fit-content;
+  padding: 0.7em;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+  font-size: 1.25em;
+  color: var(--teal-color-1);
+}
+
+.modal-close {
+  width: max(5em, 15%);
+  height: 3em;
+
+  position: absolute;
+  right: 0;
+
+  font-weight: bold;
+  background-color: var(--teal-color-1);
+  border-bottom-left-radius: 1em;
+  color: var(--white-color-1);
+}
+
+.modal-close:hover {
+  box-shadow: 0 0 5px var(--teal-color-1);
+}

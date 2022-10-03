@@ -1,0 +1,27 @@
+.shopping-cart {  
+  width: 20%;
+  height: 100%;
+  
+  display: flex;
+  font-family: sans-serif;
+}
+
+.shopping-cart__icon {
+  width: 2.25em;
+  height: fit-content;
+  padding: 5px;
+  margin: auto 0 auto auto; 
+
+  border-radius: 100%;
+  background-color: var(--white-color-1);
+}
+
+.shopping-cart__products-total {
+  width: fit-content;
+  height: fit-content;
+  margin: auto 0;
+  padding: 5%; 
+
+  font-size: 1.25em;
+  cursor: default;
+}

@@ -1,0 +1,32 @@
+.nav-ul {
+  width: 100%;
+  height: fit-content;
+  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-li {
+  width: fit-content;
+  height: fit-content;
+  padding: max(0.25em, 1%);
+  margin: 0.3em;
+  margin-left: 0;
+  border: 1px solid var(--teal-color-2);
+}
+
+.nav-link {
+  width: fit-content;
+  height: fit-content;
+  
+  color: var(--white-color-1);
+  text-transform: capitalize;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.nav-link--active {
+  pointer-events: none;
+  background-color: var(--teal-color-2);
+  color: var(--black-color-2);
+}

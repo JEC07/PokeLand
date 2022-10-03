@@ -1,0 +1,30 @@
+.nav-container { 
+  width: 80%;
+  height: 100%;
+  
+  display: flex;
+}
+
+.nav-container__items {
+  width: 85%;
+  height: 100%;
+
+  display: flex;
+}
+
+.nav-container__item {
+  width: 15%;
+  height: 100%;
+}
+
+.nav-container__item--selected {
+  width: fit-content;
+  height: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  text-transform: capitalize;
+  font-family: sans-serif;
+}

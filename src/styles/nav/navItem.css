@@ -1,0 +1,47 @@
+.nav-item {
+  width: fit-content;
+  height: 100%;
+  margin-right: 5%;
+
+  display: flex;
+}
+
+.nav-title {
+  width: fit-content;
+  height: 70%;
+  padding: 0 0.5em;
+  margin: auto;
+  border: 1px solid var(--teal-color-1);
+
+  display: inline-flex;
+  align-items: center;
+  cursor: default;
+  border-radius: 10px;
+}
+
+.nav-title--active {
+  background-color: var(--teal-color-2);
+  color: var(--black-color-2);
+}
+
+.nav-links {
+  width: 100%;
+  height: fit-content;
+  padding: 1% var(--main-padding);
+
+  position: absolute;
+  inset: 30vh 0 0 0;
+  z-index: var(--nav-z-index);
+
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  background-color: var(--teal-color-1);
+  font-family: sans-serif;
+}
+
+.nav-links[hidden] {
+  display: none;
+}
+

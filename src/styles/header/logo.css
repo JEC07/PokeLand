@@ -1,0 +1,13 @@
+.logo-link {
+  grid-area: logo;
+
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  margin-left: 0;
+}
+
+.logo-img {
+  width: min(200px, 100%);
+  height: fit-content;
+}

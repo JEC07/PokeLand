@@ -1,0 +1,26 @@
+.linkedin-address {
+  width: 4em;
+  height: 4em;
+  border: 1px solid var(--white-color-3);
+
+  border-radius: 100%;
+  background-color: var(--white-color-2);
+}
+
+.linkedin-address:hover {
+  box-shadow: 0 0 5px var(--white-color-3);
+}
+
+.linkedin-link {
+  width: inherit;
+  height: inherit;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkedin-img {
+  width: 2.5em;
+  height: 2.5em;
+}

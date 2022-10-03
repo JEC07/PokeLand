@@ -1,0 +1,32 @@
+:root {
+  --cardsContainer-z-index: 0;
+  --nav-z-index: 1;
+  --shoppingCartOrderContainer-z-index: 2;
+  --menuForMobile-z-index: 3;
+  --headerAnchor-z-index: 4;
+  --modalContainer-z-index: 5;
+  
+  --main-padding: 5%;
+
+  --black-color-1: #212121; 
+  --black-color-2: #262d41;
+
+  --white-color-1: #ffffff;
+  --white-color-2: #f2f2f2;
+  --white-color-3: #BDBDBD;
+
+  --teal-color-1: #00796B;
+  --teal-color-2: #b5dddf;
+
+  --orange-color-1: #FF5722;
+  --orange-color-2: #f1990d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  
+  box-sizing: border-box;
+  list-style-type: none;
+}

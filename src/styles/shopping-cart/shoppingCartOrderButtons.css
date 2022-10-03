@@ -1,0 +1,25 @@
+.shopping-cart-order__buttons {
+  width: 100%;
+  height: min-content;
+  padding: min(0.7em, 5%);
+  border-top: 1px solid var(--white-color-3);
+  border-bottom: 1px solid var(--white-color-3);
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.shopping-cart-order__button {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.3rem;
+
+  background-color: var(--orange-color-1);
+  border-radius: 100%;
+}
+
+.shopping-cart-order__button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
