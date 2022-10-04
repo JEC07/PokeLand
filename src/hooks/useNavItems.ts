@@ -11,17 +11,23 @@ export const useNavItems = (idsList: string[]) => {
     createList<string>(idsList, true)
   )
 
+  const [id, setId] = useState<string>('')
+
   const reset = () => {
     setItemsList(createList<string>(idsList, false))
     setHiddenItemsList(createList<string>(idsList, true))
+    setId('')
   }
 
-  const changeActive = (id: string) => {
-    setItemsList(changeIsActive<string>(itemsList, id, false))
+  const changeActive = (itemId: string) => {
+    if (itemId !== id) {
+      setItemsList(changeIsActive<string>(itemsList, itemId, false))
+      setId(itemId)
+    }
   }
 
-  const changeHidden = (id: string) => {
-    setHiddenItemsList(changeIsActive<string>(hiddenItemsList, id, true))
+  const changeHidden = (itemId: string) => {
+    setHiddenItemsList(changeIsActive<string>(hiddenItemsList, itemId, true))
   }
 
   return {
