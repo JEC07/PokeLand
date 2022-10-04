@@ -9,7 +9,6 @@
 .nav-li {
   width: fit-content;
   height: fit-content;
-  padding: max(0.25em, 1%);
   margin: 0.3em;
   margin-left: 0;
   border: 1px solid var(--teal-color-2);
@@ -18,7 +17,9 @@
 .nav-link {
   width: fit-content;
   height: fit-content;
+  padding: 0.4em;
   
+  display: inline-block;
   color: var(--white-color-1);
   text-transform: capitalize;
   text-decoration: none;
