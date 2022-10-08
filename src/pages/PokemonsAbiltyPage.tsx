@@ -6,10 +6,19 @@ import { getPokemonsByAbility } from '../services/pokemonService'
 
 const PokemonsAbilityPage: React.FC = () => {
   const { abilityName } = useParams()
-  const pokemonsList = usePokemons(abilityName, getPokemonsByAbility)
+  const {
+    error,
+    isLoading,
+    pokemonsList
+  } = usePokemons('getPokemonsByAbilityOrType', abilityName, undefined, getPokemonsByAbility)
 
   return (
-    <PokemonMainContainer pokemonsList={pokemonsList} />
+    <PokemonMainContainer
+      isLoading={isLoading}
+      error={error}
+      pokemonsList={pokemonsList}
+      cardAmountLoading={10}
+    />
   )
 }
 

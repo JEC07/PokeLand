@@ -1,25 +1,23 @@
 import * as React from 'react'
 import { useGetPokemonsQuery } from '../services/pokemonServiceRedux'
-import { Pokemon } from '../typescript/types'
-import { getPokemonByName } from '../services/pokemonService'
-import { usePromise } from '../hooks/usePromise'
 import PokemonMainContainer from '../container/PokemonsMainContainer'
+import { usePokemons } from '../hooks/usePokemons'
 
 const PokemonsHomePage: React.FC = () => {
   const { data } = useGetPokemonsQuery()
-  const [pokemonsNameList, setPokemonsNameList] = React.useState<string[]>()
-  const { resultList } = usePromise<Pokemon>(getPokemonByName, pokemonsNameList)
-
-  React.useEffect(() => {
-    if (data) {
-      setPokemonsNameList(
-        data.results.map((value) => value.name)
-      )
-    }
-  }, [data])
+  const {
+    error,
+    isLoading,
+    pokemonsList
+  } = usePokemons('getPokemons', undefined, data)
 
   return (
-    <PokemonMainContainer pokemonsList={resultList} />
+    <PokemonMainContainer
+      error={error}
+      isLoading={isLoading}
+      pokemonsList={pokemonsList}
+      cardAmountLoading={10}
+    />
   )
 }
 

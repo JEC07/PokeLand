@@ -1,24 +1,32 @@
 import * as React from 'react'
 import { useParams } from 'react-router-dom'
-import { Pokemon } from '../typescript/types'
-import { getPokemonByName } from '../services/pokemonService'
-import { notFoundImg } from '../assets/imageUrl'
-import { usePromise } from '../hooks/usePromise'
 import PokemonMainContainer from '../container/PokemonsMainContainer'
+import { usePokemons } from '../hooks/usePokemons'
 import '../styles/pages/pokemonSearchPage.css'
 
 const PokemonSearchPage: React.FC = () => {
   const { pokemonName } = useParams()
-  const { result } = usePromise<Pokemon>(getPokemonByName, undefined, pokemonName)
-
-  if (result) {
-    return (
-      <PokemonMainContainer pokemonsList={[result]} />
-    )
-  }
+  const {
+    error,
+    isLoading,
+    pokemon
+  } = usePokemons('getPokemon', pokemonName)
 
   return (
-    <main className='search-not-found' >
+    <PokemonMainContainer
+      error={error}
+      isLoading={isLoading}
+      pokemonsList={pokemon ? [pokemon] : [] }
+      cardAmountLoading={1}
+    />
+  )
+}
+
+export default PokemonSearchPage
+
+/**
+ *
+ * <main className='search-not-found' >
       <p className='search-not-found__text' >
         Sorry! We could not find
 
@@ -29,11 +37,8 @@ const PokemonSearchPage: React.FC = () => {
 
       <img
         className='search-not-found__img'
-        src={notFoundImg}
+        src={errorNotFoundImg}
         alt="not-found"
       />
     </main>
-  )
-}
-
-export default PokemonSearchPage
+ */
