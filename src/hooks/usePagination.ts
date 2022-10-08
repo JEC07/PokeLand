@@ -12,6 +12,11 @@ export const usePagination = <T>(list: T[], sliceEnd: number) => {
       setNewList(list.slice(0, sliceEnd))
       setPaginationList(newArray.fill(true, 0, 1))
     }
+
+    if (newList.length > 0 && list.length === 0) {
+      setNewList([])
+      setPaginationList([])
+    }
   }, [list, sliceEnd])
 
   const changePagination = (index: number) => {
