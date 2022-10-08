@@ -5,7 +5,7 @@ export const usePagination = <T>(list: T[], sliceEnd: number) => {
   const [paginationList, setPaginationList] = useState<boolean[]>([])
 
   useEffect(() => {
-    if (sliceEnd > 0) {
+    if (sliceEnd > 0 && list.length > 0) {
       const listLength: number = Math.ceil(list.length / sliceEnd)
       const newArray: boolean[] = Array<boolean>(listLength).fill(false)
 
