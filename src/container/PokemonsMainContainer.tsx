@@ -56,7 +56,10 @@ const PokemonMainContainer: React.FC<Props> = ({ isLoading, error, pokemonsList,
         }
       </ul>
 
-      <ol className='pagination' >
+      <ol
+        id='pagination'
+        className='pagination'
+      >
         {
           paginationList.map((value: boolean, index: number) =>
             <li

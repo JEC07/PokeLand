@@ -1,4 +1,5 @@
 import * as React from 'react'
+import GitHub from '../components/links/GitHub'
 import Linkedin from '../components/links/Linkedin'
 import { useScrollEvent } from '../hooks/useScrollEvent'
 import '../styles/container/linksContainer.css'
@@ -8,6 +9,7 @@ const LinksContainer: React.FC = () => {
 
   return (
     <div className='links-container' >
+      <GitHub />
       <Linkedin />
 
       <a
@@ -16,6 +18,13 @@ const LinksContainer: React.FC = () => {
         hidden={isHiddenScroll}
       >
         ▲
+      </a>
+
+      <a
+        className='pointer-link'
+        href='#pagination'
+      >
+        ▼
       </a>
     </div>
   )

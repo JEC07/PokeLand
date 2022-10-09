@@ -1,0 +1,26 @@
+.github-address {
+  width: 4em;
+  height: 4em;
+}
+
+.github-link {
+  width: inherit;
+  height: inherit;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.github-img {
+  width: 99%;
+  height: fit-content; 
+  border: 1px solid var(--white-color-3);
+
+  background-color: var(--white-color-1);
+  border-radius: 100%;
+}
+
+.github-img:hover {
+  box-shadow: 0 0 7px var(--white-color-3);
+}
