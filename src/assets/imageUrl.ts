@@ -1,7 +1,6 @@
 import logoImg from './logo.png'
 import magnifyingGlassImg from './magnifying-glass.png'
 import shoppingCartImg from './shopping-cart.png'
-import errorNotFoundImg from './error-404.jpg'
 import errorOopsImg from './error-oops.jpg'
 
 // ----------------Redes------------------------------
@@ -15,7 +14,6 @@ export {
   logoImg,
   magnifyingGlassImg,
   shoppingCartImg,
-  errorNotFoundImg,
   errorOopsImg,
   linkedinImg,
   gitGubImg,
